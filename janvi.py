@@ -75,7 +75,7 @@ logo=f"""
      [white]88888    db    88b 88 Yb    dP 88 [red]X
      [green]   88   dPYb   88Yb88  Yb  dP  88   
     [white]o.  88  dP__Yb  88 Y88   YbdP   88  
-    [green]"bodP' dP""""Yb 88  Y8    YP    88[red]D
+    [green]"bodP' dP"""Yb 88  Y8    YP    88[red]D
 [red]{str('━'*38)}
 [white][[green]-[white]][green] AUTHOR   :  JANVI KUMARI
 [white][[green]-[white]][green] STATUS   :  RANDOM CLONE
