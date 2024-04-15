@@ -536,7 +536,8 @@ def old():
 def uoa():
     ver=str(random.choice(range(77,500)))
     ver2=str(random.choice(range(57,77)))
-    return f"Mozilla/5.0 (Linux; Android 9; FIG-LX1 Build/HUAWEIFIG-L11; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ver} {ver2} Mobile Safari/537.36"
+    ver3=str(random.choice(range(0,15)))
+    return f"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_{ver3}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{ver} {ver2} Safari/537.36"
 
 
 def loginxo(uid,user):
