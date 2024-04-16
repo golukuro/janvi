@@ -1,27 +1,5 @@
 import os,json,time,uuid,sys,random,base64,shutil,re
 
-try:
-    pi=os.listdir("/data/data/com.termux/files/usr/bin")
-    if "pip3"  in pi:
-        pass
-    elif "pip" in pi:
-        pass
-    else:
-        print(" [red] PIP missing.....")
-        sys.exit()
-except:
-    sys.exit("[✓] Something Wrong... ")
-
-os.system("pip3 uninstall rich requests pycurl certifi gtts -y")
-os.system("pkg install play-audio")
-try:
-    import rich, requests, pycurl, certifi,gtts
-except:
-    os.system("pip3 install rich requests pycurl certifi gtts")
-    import rich, requests, pycurl, certifi,gtts
-
-
-
 
 try:
     os.listdir("/sdcard")
